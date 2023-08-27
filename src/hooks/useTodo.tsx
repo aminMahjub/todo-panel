@@ -5,7 +5,6 @@ import { Todo, Query } from "../types/global";
 
 const useTodo = (query: Query) => {
   const api = new ApiClient<Todo>("/todos");
-  console.log(query.selectedUserId);
 
   return useQuery<Todo[], Error>({
     queryKey: ["todo", query.selectedUserId],

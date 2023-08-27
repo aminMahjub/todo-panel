@@ -8,7 +8,7 @@ const TodoPart = ({ userQuery }: { userQuery: Query }) => {
       <h2 className="text-2xl text-center mb-3">Todo</h2>
 
       <div className="mockup-window border bg-base-300">
-        <div className="flex justify-center px-4 py-16 bg-base-200">
+        <div className="flex justify-center px-4 py-16 bg-base-200 overflow-auto h-96">
           {isInitialLoading && (
             <span className="loading loading-spinner loading-lg"></span>
           )}
@@ -19,7 +19,7 @@ const TodoPart = ({ userQuery }: { userQuery: Query }) => {
                 <li
                   key={id}
                   id={`${userId}`}
-                  className={`${completed ? "line-through" : ""}`}
+                  className={`${completed ? "line-through text-green-600" : ""}`}
                 >
                   {index}.{title}
                 </li>

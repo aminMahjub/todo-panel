@@ -6,7 +6,7 @@ import { Query } from "./types/global";
 
 const App = () => {
   const [query, setQuery] = useState<Query>({
-    selectedUserId: 0,
+    selectedUserId: null,
   });
 
   return (
