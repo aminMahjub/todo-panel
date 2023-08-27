@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'bricolageG-light';
+  src: url('/fonts/BricolageGrotesque-Light.ttf');
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'bricolageG-regular';
+  src: url('/fonts/BricolageGrotesque-Regular.ttf');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'bricolageG-bold';
+  src: url('/fonts/BricolageGrotesque-Bold.ttf');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'bricolageG-extra-bold';
+  src: url('/fonts/BricolageGrotesque-ExtraBold.ttf');
+  font-weight: 800;
+  font-display: swap;
+}
+
+/* overwrite mockup-phone class overflow for show all data */
+.mockup-phone .display {
+  overflow: auto;
+}
